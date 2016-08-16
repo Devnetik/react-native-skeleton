@@ -1,5 +1,5 @@
 {
-  "name": "Skeleton",
+  "name": "react-native-skeleton",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,5 +8,24 @@
   "dependencies": {
     "react": "15.2.1",
     "react-native": "0.31.0"
-  }
+  },
+  "description": "react-native starter kit",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devnetik/react-native-skeleton.git"
+  },
+  "keywords": [
+    "react-native",
+    "starter",
+    "kit",
+    "boilerplate"
+  ],
+  "author": "Michael Malura <maluramichael@googlemail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devnetik/react-native-skeleton/issues"
+  },
+  "homepage": "https://github.com/Devnetik/react-native-skeleton#readme"
 }
