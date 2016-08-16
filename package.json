@@ -6,8 +6,18 @@
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
+    "httpjs": "github:devnetik/httpjs",
+    "isjs": "github:devnetik/isjs",
+    "react-native-background-image": "github:devnetik/react-native-background-image",
+    "react-native-better-navigator": "github:devnetik/react-native-better-navigator",
+    "react-native-button": "github:devnetik/react-native-button",
+    "react-native-dimmer": "github:devnetik/react-native-dimmer",
+    "react-native-slide-view": "github:devnetik/react-native-slide-view",
+    "react-native-vector-icons": "^2.0.3"
+  },
+  "peerDependencies": {
     "react": "15.2.1",
-    "react-native": "0.31.0"
+    "react-native": "0.30.0"
   },
   "description": "react-native starter kit",
   "main": "index.js",
