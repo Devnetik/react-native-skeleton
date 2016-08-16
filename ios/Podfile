@@ -1,0 +1,27 @@
+platform :ios, '9.0'
+project 'Skeleton.xcodeproj'
+
+def pods
+    pod 'React', :subspecs => [ 'Core',
+    'RCTImage',
+    'RCTNetwork',
+    'RCTText',
+    'RCTWebSocket',
+    'RCTSettings',
+    'RCTVibration',
+    'RCTLinkingIOS',
+    'RCTCameraRoll',
+    'RCTPushNotification',
+    'RCTGeolocation',
+    'RCTCameraRoll',
+    'RCTActionSheet' ], :path => '../node_modules/react-native'
+
+    pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons/RNVectorIcons.podspec'
+
+    pod 'Fabric'
+    pod 'Crashlytics'
+end
+
+target 'Skeleton' do
+  pods
+end
