@@ -6,6 +6,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
+    "apisauce": "github:skellock/apisauce",
     "httpjs": "github:devnetik/httpjs",
     "isjs": "github:devnetik/isjs",
     "react-native-background-image": "github:devnetik/react-native-background-image",
