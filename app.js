@@ -8,41 +8,14 @@ import {
 	Text,
 	View
 } from 'react-native';
+import {Theme} from './src';
 
 export default class App extends Component {
 	render() {
 		return (
-			<View style={styles.container}>
-				<Text style={styles.welcome}>
-					Welcome to React Native!
-				</Text>
-				<Text style={styles.instructions}>
-					To get started, edit index.ios.js
-				</Text>
-				<Text style={styles.instructions}>
-					Press Cmd+R to reload,{'\n'}
-					Cmd+D or shake for dev menu
-				</Text>
+			<View style={{flex: 1, justifyContent: 'center'}}>
+				<Text style={Theme.Helper.mix('text,h1,bold')}>HELLO WORLD</Text>
 			</View>
 		);
 	}
 }
-
-const styles = StyleSheet.create({
-	container   : {
-		flex           : 1,
-		justifyContent : 'center',
-		alignItems     : 'center',
-		backgroundColor: '#F5FCFF',
-	},
-	welcome     : {
-		fontSize : 20,
-		textAlign: 'center',
-		margin   : 10,
-	},
-	instructions: {
-		textAlign   : 'center',
-		color       : '#333333',
-		marginBottom: 5,
-	},
-});

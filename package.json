@@ -9,6 +9,7 @@
     "apisauce": "github:skellock/apisauce",
     "httpjs": "github:devnetik/httpjs",
     "isjs": "github:devnetik/isjs",
+    "lodash": "^4.15.0",
     "react-native-background-image": "github:devnetik/react-native-background-image",
     "react-native-better-navigator": "github:devnetik/react-native-better-navigator",
     "react-native-button": "github:devnetik/react-native-button",
