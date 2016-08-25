@@ -10,18 +10,37 @@ import {
 	AppRegistry
 } from 'react-native';
 import {Provider} from 'react-redux';
+import Navigator from 'react-native-better-navigator';
 import {
 	Data,
-	Theme
+	Constants,
+	Routes
 } from './app';
 
 class App extends Component {
+
+	constructor(props) {
+		super(props);
+		this.router = this.router.bind(this);
+
+		this.routeMap = new Map([
+			[Constants.Routes.DASHBOARD, Routes.Dashboard]
+		]);
+	}
+
+	router(route) {
+		if (!route) return null;
+		if (!this.routeMap) return null;
+		if (!this.routeMap.has(route.name)) return null;
+
+		return this.routeMap.get(route.name);
+	}
+
 	render() {
 		return (
 			<Provider store={Data.Store}>
-				<View style={{flex: 1, justifyContent: 'center'}}>
-					<Text style={Theme.Helper.mix('text,h1,bold')}>HELLO WORLD</Text>
-				</View>
+				<Navigator initialRoute={{name: Constants.Routes.DASHBOARD}}
+						   routes={this.router}/>
 			</Provider>
 		);
 	}
