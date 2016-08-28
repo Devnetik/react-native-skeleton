@@ -39,7 +39,7 @@ class App extends Component {
 	render() {
 		return (
 			<Provider store={Data.Store}>
-				<Navigator initialRoute={{name: Constants.Routes.DASHBOARD}}
+				<Navigator initialRoute={{name: Constants.Routes.DASHBOARD, title: 'Dashboard'}}
 						   routes={this.router}/>
 			</Provider>
 		);
