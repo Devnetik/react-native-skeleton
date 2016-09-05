@@ -1,13 +1,11 @@
 {
   "name": "react-native-skeleton",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
     "apisauce": "github:skellock/apisauce",
-    "httpjs": "github:devnetik/httpjs",
-    "isjs": "github:devnetik/isjs",
     "lodash": "^4.15.0",
     "react": "^15.2.1",
     "react-native": "^0.30.0",
