@@ -12,12 +12,15 @@ export default class Dashboard extends Component {
 	render() {
 		return (
 			<View style={Style.container}>
-				<Text>DASHBOARD</Text>
 			</View>
 		)
 	}
 
 	static navigationBarVisible() {
 		return true;
+	}
+
+	static navigationBarColor() {
+		return '#777';
 	}
 }
