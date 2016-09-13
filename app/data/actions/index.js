@@ -3,7 +3,7 @@
  */
 
 import * as User from './user';
+import * as Loading from './loading';
+import * as SideMenu from './sideMenu';
 
-export {
-	User
-};
+export { User, Loading, SideMenu };

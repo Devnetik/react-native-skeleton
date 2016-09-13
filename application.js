@@ -4,21 +4,48 @@
 
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, AppRegistry} from 'react-native';
-import Navigator from 'react-native-better-navigator';
+
+import BetterNavigator from 'react-native-better-navigator';
+import LoadingOverlay from 'react-native-loading-overlay';
+import Drawer from 'react-native-drawer';
+
 import {connect} from 'react-redux';
+
 import {Constants, Routes} from './app';
 
 class Application extends Component {
 
+	//**********************************************
+	// Component
+	//**********************************************
 	constructor(props) {
 		super(props);
 		this.router = this.router.bind(this);
+		this.onSideMenuOpen = this.onSideMenuOpen.bind(this);
+		this.onSideMenuClose = this.onSideMenuClose.bind(this);
+		this.onPressDrawerButton = this.onPressDrawerButton.bind(this);
 
 		this.routeMap = new Map([
 			[Constants.Routes.DASHBOARD, Routes.Dashboard]
 		]);
 	}
 
+	render() {
+		const {Loading, General} = this.props.Store;
+
+		const initialRoute = {name: Constants.Routes.DASHBOARD, title: 'Dashboard'};
+
+		return (
+			<BetterNavigator initialRoute={initialRoute}
+							 routes={this.router}
+							 sceneStyle={{backgroundColor: 'white'}}
+							 ref={'betterNavigator'}/>
+		);
+	}
+
+	//**********************************************
+	// Methods
+	//**********************************************
 	router(route) {
 		if (!route) return null;
 		if (!this.routeMap) return null;
@@ -27,14 +54,19 @@ class Application extends Component {
 		return this.routeMap.get(route.name);
 	}
 
-	render() {
-		const initialRoute = {name: Constants.Routes.DASHBOARD, title: 'Dashboard'};
+	onSideMenuOpen() {
+		this.props.dispatch(Data.Actions.General.openSideMenu());
+	}
 
-		return (
-			<Navigator initialRoute={initialRoute}
-					   routes={this.router}
-					   sceneStyle={{backgroundColor: 'white'}}/>
-		);
+	onSideMenuClose() {
+		this.props.dispatch(Data.Actions.General.closeSideMenu());
+	}
+
+	onPressDrawerButton(route) {
+		this.refs.betterNavigator.refs.navigator.resetTo(route);
+		setTimeout(()=> {
+			this.props.dispatch(Data.Actions.General.closeSideMenu());
+		}, 120);
 	}
 }
 
