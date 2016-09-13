@@ -9,7 +9,7 @@ export default class Menu extends Component {
 	render() {
 		return (
 			<View style={Style.container}>
-				<Text>MENU</Text>
+				<Text style={Style.text}>MENU</Text>
 			</View>
 		)
 	}
