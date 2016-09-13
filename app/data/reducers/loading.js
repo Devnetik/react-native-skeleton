@@ -7,12 +7,12 @@ const initialState = {
 	loadingCount: 0
 };
 
-export default (state, action)=> {
-	if (!state) {
+export default ( state, action )=> {
+	if ( !state ) {
 		return initialState;
 	}
 
-	switch (action.type) {
+	switch ( action.type ) {
 		case Actions.Loading.LOAD:
 			return { ...state, loadingCount: state.loadingCount + 1 };
 		case Actions.Loading.DONE:

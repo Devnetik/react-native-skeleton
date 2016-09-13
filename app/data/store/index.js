@@ -46,12 +46,12 @@ import CombinedReducers from '../reducers';
  implementation is itself a store enhancer.
  */
 const enhancerReactNativeDebugger = global.reduxNativeDevTools ? global.reduxNativeDevTools() : nope => nope;
-const enhancerReactotron = createReactotronEnhancer(Reactotron);
+const enhancerReactotron = createReactotronEnhancer( Reactotron );
 
-const middleware = applyMiddleware(Thunk);
+const middleware = applyMiddleware( Thunk );
 
-const composeEnhancers = compose(enhancerReactotron, middleware, enhancerReactNativeDebugger);
-const storeEnhancer = composeEnhancers(createStore);
+const composeEnhancers = compose( enhancerReactotron, middleware, enhancerReactNativeDebugger );
+const storeEnhancer = composeEnhancers( createStore );
 
-const store = storeEnhancer(CombinedReducers);
+const store = storeEnhancer( CombinedReducers );
 export default store;

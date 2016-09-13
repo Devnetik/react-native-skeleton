@@ -3,7 +3,7 @@
  */
 
 export default class BaseAPIProvider {
-	constructor(api:API) {
+	constructor( api:API ) {
 		this.api = api.request;
 		this.setBearer = api.setBearer;
 		this.createQuery = api.createQuery;
