@@ -1,9 +1,15 @@
+'use strict';
+
 /**
- * Created by maluramichael on 18/08/16.
+ * Created by maluramichael on 13/09/16.
  */
 
 export default class BaseAPIProvider {
-	constructor( api:API ) {
+	constructor() {
+		this.setAPI = this.setAPI.bind(this);
+	}
+
+	setAPI(api: API){
 		this.api = api.request;
 		this.setBearer = api.setBearer;
 		this.createQuery = api.createQuery;
