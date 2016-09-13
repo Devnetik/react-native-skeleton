@@ -3,8 +3,8 @@
  */
 
 import { combineReducers } from 'redux';
-import Loading from './loading';
 
-export default combineReducers( {
-	Loading
-} );
+import Loading from './loading';
+import SideMenu from './sideMenu';
+
+export default combineReducers( { Loading, SideMenu } );
