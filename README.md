@@ -43,5 +43,9 @@ Here is a list of key dependencies. You can find all the other packages in the p
 Comments, Issues and Pull Requests are welcomed!
 
 ##TODO
-* [ ] Monitoring via reactotron [#1](https://github.com/Devnetik/react-native-skeleton/issues/1)
+* [x] Monitoring via reactotron [#1](https://github.com/Devnetik/react-native-skeleton/issues/1)
 * [ ] Commands and templates which help to create components, actions and reducers faster [#2](https://github.com/Devnetik/react-native-skeleton/issues/2)
+
+##Screenshots
+![dashboard](readme/dashboard.png?raw=true "Basic dashboard")
+![sidebar](readme/sidebar.png?raw=true "Basic dashboard")
