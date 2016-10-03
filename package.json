@@ -7,8 +7,8 @@
   "dependencies": {
     "apisauce": "github:skellock/apisauce",
     "lodash": "^4.15.0",
-    "react": "^15.2.1",
-    "react-native": "^0.30.0",
+    "react": "^15.3.2",
+    "react-native": "^0.34.1",
     "react-native-background-image": "^1.0.1",
     "react-native-basic-constants": "^1.0.0",
     "react-native-better-navigator": "^1.0.0",
