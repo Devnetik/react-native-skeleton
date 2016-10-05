@@ -2,11 +2,10 @@
   "name": "react-native-skeleton",
   "version": "1.0.1",
   "scripts": {
-  },
-  "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json",
-    "docs": "npm run generate-docs && open docs/index.html"
+    "docs": "npm run generate-docs && open docs/index.html",
+	"test": "jest"
   },
   "dependencies": {
     "apisauce": "github:skellock/apisauce",
@@ -29,8 +28,16 @@
     "redux-thunk": "^2.1.0"
   },
   "devDependencies": {
+    "babel-jest": "^16.0.0",
+    "babel-preset-react-native": "^1.9.0",
     "docdash": "^0.4.0",
-    "jsdoc": "jsdoc3/jsdoc"
+    "jest": "^16.0.1",
+    "jest-react-native": "^16.0.0",
+    "jsdoc": "jsdoc3/jsdoc",
+    "react-test-renderer": "^15.3.2"
+  },
+  "jest": {
+    "preset": "jest-react-native"
   },
   "description": "react-native starter kit",
   "main": "index.js",
