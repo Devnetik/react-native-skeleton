@@ -17,4 +17,8 @@ export default class MenuButton extends Component {
 			</TouchableHighlight>
 		)
 	}
+
+	static defaultProps = {
+		icon: 'gear'
+	}
 }

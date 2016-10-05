@@ -1,0 +1,170 @@
+exports[`test renders correctly without props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
+  }>
+  <View
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+        "overflow": "hidden",
+      }
+    }>
+    <View
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="auto"
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Array [
+            Object {
+              "backgroundColor": "white",
+              "flex": 1,
+              "marginTop": 64,
+            },
+            Object {},
+            undefined,
+          ],
+          null,
+        ]
+      }>
+      <View
+        style={
+          Object {
+            "backgroundColor": "white",
+            "flex": 1,
+          }
+        } />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": 64,
+        },
+        Array [
+          Object {
+            "backgroundColor": "#333",
+          },
+          Object {
+            "backgroundColor": "#777",
+          },
+        ],
+      ]
+    }>
+    <View
+      pointerEvents="box-none"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "height": 44,
+          "left": 0,
+          "opacity": 1,
+          "position": "absolute",
+          "right": 0,
+          "top": 20,
+        }
+      }>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            Array [
+              undefined,
+            ],
+          ]
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {},
+              Array [
+                Object {
+                  "color": "white",
+                  "fontWeight": "bold",
+                },
+                undefined,
+              ],
+            ]
+          }>
+          
+        </Text>
+      </View>
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "height": 44,
+          "left": 0,
+          "opacity": 1,
+          "overflow": "hidden",
+          "position": "absolute",
+          "top": 20,
+        }
+      }>
+      <View />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "backgroundColor": "transparent",
+          "height": 44,
+          "opacity": 1,
+          "overflow": "hidden",
+          "position": "absolute",
+          "right": 0,
+          "top": 20,
+        }
+      }>
+      <View />
+    </View>
+  </View>
+</View>
+`;
