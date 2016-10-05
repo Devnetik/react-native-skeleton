@@ -2,7 +2,11 @@
   "name": "react-native-skeleton",
   "version": "1.0.1",
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json",
+    "docs": "npm run generate-docs && open docs/index.html"
   },
   "dependencies": {
     "apisauce": "github:skellock/apisauce",
@@ -24,9 +28,12 @@
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0"
   },
+  "devDependencies": {
+    "docdash": "^0.4.0",
+    "jsdoc": "jsdoc3/jsdoc"
+  },
   "description": "react-native starter kit",
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Devnetik/react-native-skeleton.git"

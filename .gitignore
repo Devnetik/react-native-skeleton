@@ -41,3 +41,4 @@ android/app/libs
 android/keystores/debug.keystore
 ios/Pods
 Podfile.lock
+docs

@@ -9,7 +9,7 @@ export default class BaseAPIProvider {
 		this.setAPI = this.setAPI.bind(this);
 	}
 
-	setAPI(api: API){
+	setAPI(api){
 		this.api = api.request;
 		this.setBearer = api.setBearer;
 		this.createQuery = api.createQuery;

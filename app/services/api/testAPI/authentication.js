@@ -5,13 +5,12 @@
  */
 import BaseAPIProvider from '../../../core/api/baseProvider';
 
-// TODO: Rename to Bearer Provider
 export default class AuthenticationProvider extends BaseAPIProvider {
 	setBearer( token ) {
 		this.api.setBearer( token );
 	}
 
-	login( apikey:String ) {
+	login( apikey ) {
 		return this.api.post( '/login', { apikey } );
 	}
 }
