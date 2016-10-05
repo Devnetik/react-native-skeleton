@@ -1,4 +1,4 @@
-exports[`test renders correctly without props 1`] = `
+exports[`test renders correctly with children 1`] = `
 <View
   style={
     Object {
@@ -10,16 +10,25 @@ exports[`test renders correctly without props 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 20,
-        "fontWeight": "bold",
-        "marginLeft": 10,
-      }
-    }>
-    MENU
+    ellipsizeMode="tail">
+    Dashboard
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail">
+    About
   </Text>
 </View>
+`;
+
+exports[`test renders correctly without props 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#444",
+      "flex": 1,
+      "paddingTop": 20,
+    }
+  } />
 `;

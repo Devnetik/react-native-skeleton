@@ -11,14 +11,15 @@ export default class MenuButton extends Component {
 	render() {
 		return (
 			<TouchableHighlight style={Style.button}
-								onPress={this.props.onPress}
-								underlayColor={'transparent'}>
+                          onPress={this.props.onPress}
+								          underlayColor={'transparent'}>
 				<Icon name={this.props.icon} size={24} color={'white'}/>
 			</TouchableHighlight>
 		)
 	}
 
 	static defaultProps = {
-		icon: 'gear'
+		icon: 'gear',
+    onPress: ()=>{}
 	}
 }
