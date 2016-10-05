@@ -52,7 +52,7 @@
     "boilerplate"
   ],
   "author": "Michael Malura <maluramichael@googlemail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Devnetik/react-native-skeleton/issues"
   },
