@@ -1,5 +1,7 @@
 #react-native skeleton
 
+[![Join the chat at https://gitter.im/Devnetik/react-native-skeleton](https://badges.gitter.im/Devnetik/react-native-skeleton.svg)](https://gitter.im/Devnetik/react-native-skeleton?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This skeleton is forged with the greatest libraries available to provide a pretty awesome kickstart for your new react-native app.
 
 ##Features
