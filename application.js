@@ -27,7 +27,9 @@ class Application extends Component {
 		this.onPressDrawerButton = this.onPressDrawerButton.bind( this );
 
 		const routes = [
-			[ Constants.Routes.DASHBOARD, Routes.Dashboard ]
+			[ Constants.Routes.LAUNCH, Routes.Launch ],
+			[ Constants.Routes.DASHBOARD, Routes.Dashboard ],
+			[ Constants.Routes.GENERATE_TRAINING, Routes.GenerateTraining ]
 		];
 
 		this.routeMap = new Map( routes );
@@ -36,7 +38,7 @@ class Application extends Component {
 	render() {
 		const { Loading, SideMenu } = this.props.Store;
 
-		const initialRoute = { name: Constants.Routes.DASHBOARD, title: 'Dashboard' };
+		const initialRoute = { name: Constants.Routes.DASHBOARD, title: 'CoachTutor' };
 
 		const defaultComponents = {
 			left: ()=> <Components.MenuButton icon='bars' onPress={this.toggleSideMenu}/>
