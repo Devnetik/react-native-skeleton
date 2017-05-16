@@ -1,22 +1,22 @@
-#react-native skeleton
+# react-native skeleton
 
 [![Join the chat at https://gitter.im/Devnetik/react-native-skeleton](https://badges.gitter.im/Devnetik/react-native-skeleton.svg)](https://gitter.im/Devnetik/react-native-skeleton?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This skeleton is forged with the greatest libraries available to provide a pretty awesome kickstart for your new react-native app.
 
-##Features
+## Features
 * Navigation
 * Themes
 * Data Handling
 * API Backend
 * Metrics
 
-##Installation
+## Installation
 * Get the project ```git clone https://github.com/Devnetik/react-native-skeleton.git MyNewApp```
 * Install npm dependencies ```npm install```
 * Install pods ```cd ios && pod install``` you need cocoapods for this to work 
 
-##Dependencies
+## Dependencies
 
 There are some dependencies which you need on your system
 
@@ -34,23 +34,23 @@ Here is a list of key dependencies. You can find all the other packages in the p
 * pods
 	* Fabric/Crashlytics
 	
-##Getting Started
+## Getting Started
 
 * Install dependencies
 * Rename your app
 * Build and Run
 
-##Call an api
+## Call an api
 
 
-##Feedback
+## Feedback
 
 Comments, Issues and Pull Requests are welcomed!
 
-##TODO
+## TODO
 * [x] Monitoring via reactotron [#1](https://github.com/Devnetik/react-native-skeleton/issues/1)
 * [ ] Commands and templates which help to create components, actions and reducers faster [#2](https://github.com/Devnetik/react-native-skeleton/issues/2)
 
-##Screenshots
+## Screenshots
 ![dashboard](readme/dashboard.png?raw=true "Basic dashboard")
 ![sidebar](readme/sidebar.png?raw=true "Basic dashboard")
