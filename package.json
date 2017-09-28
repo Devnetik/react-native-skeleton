@@ -5,7 +5,9 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json",
     "docs": "npm run generate-docs && open docs/index.html",
-	"test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "apisauce": "github:skellock/apisauce",
@@ -25,7 +27,8 @@
     "reactotron-react-native": "^1.1.2",
     "reactotron-redux": "^1.1.2",
     "redux": "^3.5.2",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "snyk": "^1.41.1"
   },
   "devDependencies": {
     "babel-jest": "^16.0.0",
@@ -56,5 +59,6 @@
   "bugs": {
     "url": "https://github.com/Devnetik/react-native-skeleton/issues"
   },
-  "homepage": "https://github.com/Devnetik/react-native-skeleton#readme"
+  "homepage": "https://github.com/Devnetik/react-native-skeleton#readme",
+  "snyk": true
 }
